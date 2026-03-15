@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Eigenvalues and Eigenvectors</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Eigenvalues: The Spectral Approach to Operator Structure</div>
+                    <div class="env-body">
+                        <p>Chapter 7 developed canonical forms using the abstract machinery of module theory. In this chapter, we approach the same questions from a more concrete, spectral perspective. Eigenvalues and eigenvectors identify the "principal axes" of a linear operator: the directions along which the operator acts by simple scaling. This eigenvalue-centered viewpoint is not only more intuitive but also essential for the spectral theory of normal operators in Chapters 9 and 10.</p>
+                        <p><strong>Chapter roadmap:</strong> We define eigenvalues and eigenvectors, study characteristic and minimal polynomials, characterize diagonalizability, prove Schur's triangularization theorem, revisit the Jordan Canonical Form from the eigenvalue perspective, prove the Cayley-Hamilton Theorem independently, and explore applications in spectral theory.</p>
+                    </div>
+                </div>
+
+
                 <p>The study of eigenvalues and eigenvectors is central to understanding the structure of linear operators. These special scalars and vectors reveal the fundamental behavior of a transformation.</p>
 
                 <div class="env-block definition">
@@ -179,6 +188,14 @@ window.CHAPTERS.push({
             title: 'Characteristic and Minimal Polynomials',
             content: `
                 <h2>Characteristic and Minimal Polynomials</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Eigenvalues are roots of the characteristic polynomial. The minimal polynomial, the polynomial of smallest degree that annihilates the operator, provides finer information. Together, these polynomials encode the spectral data of the operator and connect the eigenvalue approach of this chapter to the module-theoretic approach of Chapter 7.</p>
+                    </div>
+                </div>
+
 
                 <p>The characteristic polynomial encodes complete information about eigenvalues, including their algebraic multiplicities.</p>
 
@@ -360,6 +377,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Diagonalizability</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The simplest canonical form is a diagonal matrix: the operator is diagonalizable if and only if there is a basis of eigenvectors. We characterize diagonalizability in terms of the minimal polynomial (it must split into distinct linear factors) and develop criteria for checking it. This section explains when the eigenvalue approach yields a complete decomposition and when we need the more refined Jordan form.</p>
+                    </div>
+                </div>
+
+
                 <p>A linear operator is diagonalizable when it admits an eigenvector basis—the ideal situation for understanding its structure.</p>
 
                 <div class="env-block definition">
@@ -537,6 +562,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Triangularization and Schur's Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>When an operator is not diagonalizable, can we at least find a basis in which it is upper-triangular? Schur's Theorem guarantees this over algebraically closed fields (and more generally, whenever the characteristic polynomial splits). Triangularization is a powerful intermediate step between the general case and full diagonalization, and it is the key tool for proving the Spectral Theorem in Chapter 10.</p>
+                    </div>
+                </div>
+
+
                 <p>When an operator is not diagonalizable, we can often still achieve a triangular form, which is simpler than an arbitrary matrix.</p>
 
                 <div class="env-block definition">
@@ -701,6 +734,14 @@ window.CHAPTERS.push({
             title: 'The Jordan Canonical Form',
             content: `
                 <h2>The Jordan Canonical Form</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now revisit the Jordan Canonical Form, this time from the eigenvalue perspective rather than the module-theoretic one of Chapter 7. By analyzing generalized eigenspaces and chains of generalized eigenvectors, we construct the Jordan basis directly. This hands-on approach complements the abstract derivation and provides constructive algorithms for computing the form.</p>
+                    </div>
+                </div>
+
 
                 <p>Over an algebraically closed field, the Jordan canonical form provides the finest classification of operators up to similarity—a true canonical form that captures all essential information.</p>
 
@@ -905,6 +946,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Cayley-Hamilton Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We give an independent proof of the Cayley-Hamilton Theorem, showing that every operator satisfies its own characteristic polynomial. This result, which we derived as a corollary of the Rational Canonical Form in Chapter 7, here receives a direct proof that illuminates the connection between characteristic polynomials and matrix evaluations.</p>
+                    </div>
+                </div>
+
+
                 <p>One of the most elegant results in linear algebra states that every operator satisfies its own characteristic equation—a powerful tool for computing matrix functions and understanding operator structure.</p>
 
                 <div class="env-block theorem">
@@ -1100,6 +1149,14 @@ window.CHAPTERS.push({
             title: 'Applications and Spectral Theory',
             content: `
                 <h2>Applications and Spectral Theory</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with applications that showcase the power of eigenvalue methods: matrix exponentials, recurrence relations, Markov chains, and an introduction to spectral theory. These applications motivate the next chapter, where adding an inner product to our vector space unlocks even more powerful spectral results for special classes of operators.</p>
+                    </div>
+                </div>
+
 
                 <p>The theory of eigenvalues has profound applications across mathematics, physics, engineering, and data science. We conclude with spectral resolutions and key applications.</p>
 

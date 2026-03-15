@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Metric Spaces and Open Sets</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Algebraic Structure to Metric Structure</div>
+                    <div class="env-body">
+                        <p>Chapters 9 through 11 studied the interplay between linear structure and geometric structure (inner products, bilinear forms). Now we abstract the geometric side further by studying metric spaces: sets equipped with a distance function but no linear structure. This abstraction is the natural setting for discussing convergence, continuity, and completeness, concepts that are essential for understanding infinite-dimensional inner product spaces (Hilbert spaces) in Chapter 13.</p>
+                        <p><strong>Chapter roadmap:</strong> We define metric spaces and their topology (open sets, closed sets), study convergence and continuity, introduce completeness and the completion construction, develop compactness, prove the Banach Fixed Point Theorem, and discuss separability.</p>
+                    </div>
+                </div>
+
+
                 <p>Metric spaces provide the fundamental framework for discussing continuity, convergence, and completeness in abstract settings. The theory developed here will be essential for our study of infinite-dimensional inner product spaces.</p>
 
                 <div class="env-block definition">
@@ -307,6 +316,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Convergence and Continuity</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With the topology of metric spaces established, we can define convergence of sequences and continuity of functions using the language of open sets and neighborhoods. These definitions generalize the familiar \(\epsilon\)-\(\delta\) definitions from real analysis to arbitrary metric spaces, setting the stage for the completeness theory in the next section.</p>
+                    </div>
+                </div>
+
+
                 <p>The metric structure allows us to define convergence of sequences and continuity of functions in a natural way.</p>
 
                 <div class="env-block definition">
@@ -512,6 +529,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Completeness and Cauchy Sequences</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>A metric space is complete if every Cauchy sequence converges. Completeness is the crucial property that distinguishes \(\mathbb{R}\) from \(\mathbb{Q}\) and Hilbert spaces from mere inner product spaces. In a complete space, we can take limits freely, which enables powerful analytical tools like the Banach Fixed Point Theorem and the construction of orthogonal projections in Hilbert spaces.</p>
+                    </div>
+                </div>
+
+
                 <p>Completeness is a crucial property that distinguishes spaces where analysis can be done effectively.</p>
 
                 <div class="env-block definition">
@@ -634,6 +659,14 @@ window.CHAPTERS.push({
             title: 'The Completion of a Metric Space',
             content: `
                 <h2>The Completion of a Metric Space</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Not every metric space is complete, but every metric space can be completed. The completion construction, analogous to constructing \(\mathbb{R}\) from \(\mathbb{Q}\), embeds any metric space into a complete one in a minimal way. This construction will be essential in Chapter 13, where completing an inner product space yields a Hilbert space.</p>
+                    </div>
+                </div>
+
 
                 <p>Every metric space can be "completed" by adding limit points of Cauchy sequences.</p>
 
@@ -792,6 +825,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Compactness</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Compactness is the topological generalization of "closed and bounded" (in finite dimensions). Compact sets enjoy remarkable properties: every sequence has a convergent subsequence, every continuous function attains its maximum, and every open cover has a finite subcover. In linear algebra, the unit ball in finite-dimensional spaces is compact, but this fails dramatically in infinite dimensions, a fact with deep consequences for operator theory.</p>
+                    </div>
+                </div>
+
+
                 <p>Compactness is a topological property that generalizes the notion of closed and bounded subsets of Euclidean space.</p>
 
                 <div class="env-block definition">
@@ -906,6 +947,14 @@ window.CHAPTERS.push({
             title: 'The Banach Fixed Point Theorem',
             content: `
                 <h2>The Banach Fixed Point Theorem</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Banach Fixed Point Theorem (Contraction Mapping Theorem) is one of the most widely applicable results in analysis. It guarantees that every contraction on a complete metric space has a unique fixed point, and provides an iterative algorithm to find it. This theorem has applications to differential equations, integral equations, and iterative numerical methods.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most powerful and widely applicable results in analysis is the Banach fixed point theorem, also known as the contraction mapping theorem.</p>
 
@@ -1106,6 +1155,14 @@ window.CHAPTERS.push({
             title: 'Separability and Dense Subsets',
             content: `
                 <h2>Separability and Dense Subsets</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by studying separability (the existence of a countable dense subset). Separable spaces are "essentially countable" in a topological sense, and many important function spaces are separable. In Chapter 13, separability of a Hilbert space will be equivalent to the existence of a countable orthonormal basis, connecting the metric theory back to the linear algebra of orthonormal sets.</p>
+                    </div>
+                </div>
+
 
                 <p>Separability is a topological property that characterizes when a metric space is "not too large" in a certain sense.</p>
 

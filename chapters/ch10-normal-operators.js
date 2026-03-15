@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Normal Operators and Basic Properties</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">The Spectral Theorem: Normal Operators</div>
+                    <div class="env-body">
+                        <p>Chapter 9 introduced inner product spaces, adjoint operators, and the geometric tools of orthogonality. We now combine these geometric tools with the spectral theory of Chapter 8 to obtain the most powerful structure theorem in finite-dimensional linear algebra: the Spectral Theorem for normal operators. An operator is normal if it commutes with its adjoint, and the Spectral Theorem says that normal operators are precisely those that can be orthogonally diagonalized.</p>
+                        <p><strong>Chapter roadmap:</strong> We define normal operators and their basic properties, prove the Spectral Theorem, specialize to self-adjoint and unitary/orthogonal operators, study positive operators and square roots, develop the polar decomposition, and explore the functional calculus.</p>
+                    </div>
+                </div>
+
+
                 <p>In this chapter, we study operators that commute with their adjoints. These operators, called <strong>normal operators</strong>, have remarkably nice properties and admit a complete spectral decomposition.</p>
 
                 <div class="env-block definition">
@@ -186,6 +195,14 @@ window.CHAPTERS.push({
             title: 'The Spectral Theorem for Normal Operators',
             content: `
                 <h2>The Spectral Theorem for Normal Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The central result of this chapter: a linear operator on a finite-dimensional inner product space is normal if and only if it is unitarily diagonalizable. This theorem unifies the diagonalizability conditions from Chapter 8 with the orthogonality theory from Chapter 9, giving a complete spectral decomposition with orthogonal eigenspaces.</p>
+                    </div>
+                </div>
+
 
                 <p>The spectral theorem is one of the most important results in linear algebra. It characterizes normal operators as precisely those that can be diagonalized with respect to an orthonormal basis.</p>
 
@@ -365,6 +382,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Self-Adjoint Operators</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Self-adjoint operators (\(T = T^*\)) are the most important subclass of normal operators. They have real eigenvalues even over \(\mathbb{C}\), and over \(\mathbb{R}\) they are precisely the operators that can be orthogonally diagonalized. In physics, observables in quantum mechanics are self-adjoint operators, and their real eigenvalues correspond to physically measurable quantities.</p>
+                    </div>
+                </div>
+
+
                 <p>Self-adjoint operators (also called Hermitian operators in the complex case and symmetric operators in the real case) are normal operators with a special property: their eigenvalues are all real.</p>
 
                 <div class="env-block definition">
@@ -532,6 +557,14 @@ window.CHAPTERS.push({
             title: 'Unitary and Orthogonal Operators',
             content: `
                 <h2>Unitary and Orthogonal Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Unitary operators (\(T^*T = I\)) preserve inner products and norms, making them the "rigid motions" of inner product spaces. They form a group under composition, and their eigenvalues lie on the unit circle. Over \(\mathbb{R}\), the analogous orthogonal operators represent rotations and reflections. These operators provide the "change of orthonormal basis" transformations that underlie the Spectral Theorem.</p>
+                    </div>
+                </div>
+
 
                 <p>Unitary operators (in complex spaces) and orthogonal operators (in real spaces) are the isometries that preserve the inner product structure. They are characterized by the property that their adjoint equals their inverse.</p>
 
@@ -701,6 +734,14 @@ window.CHAPTERS.push({
             title: 'Positive Operators and Square Roots',
             content: `
                 <h2>Positive Operators and Square Roots</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Positive operators (self-adjoint with non-negative eigenvalues) generalize non-negative real numbers to the operator setting. Every positive operator has a unique positive square root, a fact that enables the polar decomposition in the next section. Positive operators appear throughout optimization, statistics (covariance matrices), and quantum information theory (density operators).</p>
+                    </div>
+                </div>
+
 
                 <p>Positive operators are self-adjoint operators with nonnegative eigenvalues. They play a crucial role in the polar decomposition and have a unique positive square root.</p>
 
@@ -892,6 +933,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Polar Decomposition</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Just as every complex number \(z\) can be written as \(z = r e^{i\theta}\) (a non-negative magnitude times a unit complex number), every linear operator can be written as the product of a positive operator and a unitary operator. This polar decomposition separates "stretching" from "rotating" and is a key tool in the SVD theory of Chapter 17.</p>
+                    </div>
+                </div>
+
+
                 <p>Just as every nonzero complex number can be written as \\(z = re^{i\\theta}\\) (polar form), every operator can be decomposed as a product of a positive operator and a unitary operator.</p>
 
                 <div class="env-block theorem">
@@ -1076,6 +1125,14 @@ window.CHAPTERS.push({
             title: 'Functional Calculus and Applications',
             content: `
                 <h2>Functional Calculus and Applications</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Spectral Theorem allows us to apply any function to a normal operator by applying it to its eigenvalues. This functional calculus extends the notion of matrix polynomials to arbitrary continuous functions, enabling constructions like \(e^{A}\), \(\log A\), and \(A^{1/2}\). We conclude with applications that connect the spectral theory developed in Chapters 8 through 10 to the bilinear forms of Chapter 11.</p>
+                    </div>
+                </div>
+
 
                 <p>The spectral theorem allows us to define functions of normal operators in a natural way, leading to a powerful functional calculus.</p>
 

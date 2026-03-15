@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Sets, Functions, and Composition</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Welcome to Advanced Linear Algebra</div>
+                    <div class="env-body">
+                        <p>Before diving into the core theory of vector spaces and linear transformations, we need a solid foundation in the language of mathematics itself. This chapter establishes the essential tools from set theory, algebra, and matrix theory that underpin everything that follows. Think of it as sharpening your tools before building: the concepts here (functions, equivalence relations, rings, fields) will reappear constantly throughout the course.</p>
+                        <p><strong>Chapter roadmap:</strong> We begin with sets and functions, then explore equivalence relations (which formalize "sameness"), partial orders and Zorn's Lemma (our main tool for existence proofs), cardinality (measuring the size of infinite sets), rings and fields (the scalar systems for linear algebra), and finally matrices and linear systems (the computational backbone).</p>
+                    </div>
+                </div>
+
+
                 <p>We begin by establishing notation and key definitions for functions, which serve as the foundation for understanding linear transformations.</p>
 
                 <div class="env-block definition">
@@ -320,6 +329,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Equivalence Relations and Partitions</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Having established the language of functions and composition, we now turn to a different kind of structure on sets: equivalence relations. Where functions describe how sets map to one another, equivalence relations describe how elements within a single set can be grouped by "sameness." This concept is indispensable: quotient spaces, similarity classes of matrices, and congruence modulo a subspace all rest on equivalence relations.</p>
+                    </div>
+                </div>
+
+
                 <p>Equivalence relations formalize the notion of "sameness" and play a crucial role in linear algebra, particularly in understanding similarity of matrices and quotient spaces.</p>
 
                 <div class="env-block definition">
@@ -512,6 +529,14 @@ window.CHAPTERS.push({
             title: 'Partial Orders and Zorn\'s Lemma',
             content: `
                 <h2>Partial Orders and Zorn's Lemma</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Equivalence relations captured the idea of elements being "the same." Partial orders capture the idea of elements being "comparable" without requiring that every pair can be compared. Zorn's Lemma, the key result of this section, will become our primary tool for proving existence of bases in infinite-dimensional vector spaces and maximal ideals in rings.</p>
+                    </div>
+                </div>
+
 
                 <p>Partial orders generalize the familiar notion of "less than or equal to" and provide the framework for Zorn's Lemma, which guarantees the existence of bases in vector spaces.</p>
 
@@ -732,6 +757,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Cardinality and Infinite Sets</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With equivalence relations and partial orders in hand, we now tackle a fundamental question: how do we measure the "size" of infinite sets? The concept of cardinality, built on bijections, will let us distinguish between countable and uncountable infinities. This distinction matters in linear algebra because it determines whether vector spaces can have countable bases or require something larger.</p>
+                    </div>
+                </div>
+
+
                 <p>Cardinality formalizes the notion of "size" for sets, both finite and infinite. Understanding infinite cardinalities is essential for studying infinite-dimensional vector spaces.</p>
 
                 <div class="env-block definition">
@@ -925,6 +958,14 @@ window.CHAPTERS.push({
             title: 'Rings, Fields, and Polynomials',
             content: `
                 <h2>Rings, Fields, and Polynomials</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now shift from set-theoretic foundations to algebraic structures. Rings and fields are the scalar systems over which vector spaces and modules are defined. Understanding these structures is essential because the properties of the scalar ring (whether it is a field, a PID, or just a commutative ring) dramatically affect the behavior of the modules built over it.</p>
+                    </div>
+                </div>
+
 
                 <p>Linear algebra is fundamentally the study of vector spaces over fields. We review the algebraic structures underlying this theory.</p>
 
@@ -1128,6 +1169,14 @@ window.CHAPTERS.push({
             title: 'Matrices and Linear Systems',
             content: `
                 <h2>Matrices and Linear Systems</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude the preliminaries by reviewing the computational side of linear algebra: matrices, row reduction, and linear systems. These concrete tools will serve as the bridge between the abstract theory we develop in subsequent chapters and the computations that make the theory actionable. Every abstract theorem about linear transformations has a matrix-level counterpart that we can compute with.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude with a review of matrices, which provide the computational framework for linear algebra.</p>
 

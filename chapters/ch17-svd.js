@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Singular Values</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">The SVD and Pseudoinverse: Optimal Matrix Decompositions</div>
+                    <div class="env-body">
+                        <p>The canonical forms of Chapters 7 and 8 reveal the structure of square matrices and operators. The Singular Value Decomposition (SVD) does the same for rectangular matrices, decomposing any matrix into a product of orthogonal/unitary factors and a diagonal matrix of singular values. The SVD is arguably the most important matrix decomposition in applied mathematics: it provides the best low-rank approximation, defines the condition number, and leads to the Moore-Penrose pseudoinverse for solving inconsistent linear systems.</p>
+                        <p><strong>Chapter roadmap:</strong> We define singular values via the spectral theory of \(\tau^*\tau\), prove the SVD in both operator and matrix form, revisit the polar decomposition from Chapter 10, define the Moore-Penrose pseudoinverse, apply it to least squares problems, study operator norms and condition numbers, and conclude with applications.</p>
+                    </div>
+                </div>
+
+
                 <p>Let \\(U\\) and \\(V\\) be finite-dimensional inner product spaces over \\(\\mathbb{C}\\) or \\(\\mathbb{R}\\), and let \\(\\tau \\in \\mathcal{L}(U, V)\\) be a linear transformation. The spectral theorem applied to \\(\\tau^* \\tau\\) provides profound insight into the relationship between \\(\\tau\\) and its adjoint \\(\\tau^*\\).</p>
 
                 <div class="env-block definition">
@@ -189,6 +198,14 @@ window.CHAPTERS.push({
             title: 'The Singular Value Decomposition (Matrix Form)',
             content: `
                 <h2>The Singular Value Decomposition (Matrix Form)</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Having defined singular values as the square roots of eigenvalues of \(\tau^*\tau\), we now state and prove the SVD: every matrix \(A \in M_{m \times n}\) can be written as \(A = U \Sigma V^*\), where \(U\) and \(V\) are unitary and \(\Sigma\) is a diagonal matrix of singular values. This decomposition simultaneously diagonalizes both the "input" and "output" sides of the linear map, something that Jordan and rational canonical forms cannot do.</p>
+                    </div>
+                </div>
+
 
                 <p>The singular value decomposition for operators translates directly into a matrix factorization that is fundamental in numerical linear algebra and data science.</p>
 
@@ -377,6 +394,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Polar Decomposition</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We revisit the polar decomposition (introduced for operators in Chapter 10) using the SVD. Every matrix factors as the product of a positive semidefinite matrix and a unitary (or partial isometry). The SVD makes this decomposition constructive: the positive factor is built from the singular values, and the unitary factor from the singular vectors. This perspective unifies the operator-theoretic and matrix-theoretic views of the polar decomposition.</p>
+                    </div>
+                </div>
+
+
                 <p>Just as every complex number \\(z\\) can be written as \\(z = r e^{i\\theta}\\) (magnitude times phase), every matrix admits a canonical factorization into "magnitude" (positive semidefinite) and "phase" (unitary/orthogonal) parts.</p>
 
                 <div class="env-block theorem">
@@ -540,6 +565,14 @@ window.CHAPTERS.push({
             title: 'The Moore-Penrose Pseudoinverse',
             content: `
                 <h2>The Moore-Penrose Pseudoinverse</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>When a matrix is not invertible (or not even square), the concept of an inverse needs to be generalized. The Moore-Penrose pseudoinverse \(A^+\) is the unique matrix satisfying four axioms that characterize it as the "best possible" generalized inverse. It is computed directly from the SVD by inverting the non-zero singular values, connecting the theoretical decomposition to a practical computational tool.</p>
+                    </div>
+                </div>
+
 
                 <p>The Moore-Penrose inverse (or pseudoinverse) extends the notion of matrix inverse to non-square and singular matrices. It is the unique "best approximate inverse" in a precise sense.</p>
 
@@ -735,6 +768,14 @@ window.CHAPTERS.push({
             title: 'Least Squares and the Pseudoinverse',
             content: `
                 <h2>Least Squares and the Pseudoinverse</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The pseudoinverse provides the solution to the least squares problem: given an inconsistent system \(Ax = b\), the vector \(x^+ = A^+ b\) is the minimum-norm solution among all vectors that minimize \(\|Ax - b\|\). This connects the abstract theory of the SVD to one of the most important problems in applied mathematics, statistics (linear regression), and data science.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most important applications of the Moore-Penrose pseudoinverse is solving overdetermined linear systems in the least squares sense.</p>
 
@@ -933,6 +974,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Operator Norms and Condition Numbers</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The largest singular value of a matrix equals its operator norm (the maximum factor by which it can stretch a vector). The condition number, the ratio of the largest to smallest singular value, measures how sensitive a linear system is to perturbations. These quantities, derived directly from the SVD, are fundamental to numerical linear algebra and the analysis of computational stability.</p>
+                    </div>
+                </div>
+
+
                 <p>The singular values provide a direct route to understanding the stability and conditioning of linear systems.</p>
 
                 <div class="env-block definition">
@@ -1107,6 +1156,14 @@ window.CHAPTERS.push({
             title: 'Applications and Further Topics',
             content: `
                 <h2>Applications and Further Topics</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with applications of the SVD to data compression (low-rank approximation and the Eckart-Young theorem), principal component analysis, and signal processing. These applications, which are among the most impactful in modern applied mathematics, demonstrate how the abstract spectral and inner product theories of earlier chapters culminate in powerful computational tools. The algebraic structures underlying these tools will be formalized in Chapter 18.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude with a survey of important applications of the SVD and pseudoinverse.</p>
 

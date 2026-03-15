@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Umbral Algebra and Polynomial Sequences</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Linear Algebra in Action: The Umbral Calculus</div>
+                    <div class="env-body">
+                        <p>This final chapter showcases the power of advanced linear algebra in a surprising setting: the study of polynomial sequences and their combinatorial identities. The Umbral Calculus, developed by Rota and his collaborators, uses the theory of linear functionals on polynomial spaces, shift operators, and the algebraic structure of formal power series to unify and extend classical results about Bernoulli numbers, Hermite polynomials, Laguerre polynomials, and many other sequences. It is a beautiful demonstration that the abstract tools of linear algebra (duals, operators, algebras) have concrete and elegant applications.</p>
+                        <p><strong>Chapter roadmap:</strong> We define the umbral algebra and polynomial sequences, study associated sequences and the shift operator, develop Sheffer sequences and delta operators, explore umbral composition and operator theory, and conclude with generating functions and classical sequences.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block intuition">
                     <div class="env-title">Intuition</div>
                     <div class="env-body">
@@ -267,6 +276,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Associated Sequences and the Shift Operator</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The shift operator \(E^a\), defined by \(E^a p(x) = p(x + a)\), is a linear operator on the polynomial algebra. Associated sequences are polynomial sequences characterized by their behavior under the shift operator. This section develops the interplay between shift operators and delta operators, connecting the operator theory of Chapters 7-8 to the combinatorics of polynomial identities.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block definition">
                     <div class="env-title">Definition 19.6 (Associated Sequence)</div>
                     <div class="env-body">
@@ -477,6 +494,14 @@ window.CHAPTERS.push({
             title: 'Sheffer Sequences and Delta Operators',
             content: `
                 <h2>Sheffer Sequences and Delta Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Sheffer sequences are the most general class of polynomial sequences amenable to umbral methods. They are characterized by a pair of formal power series (one for the delta operator, one for the "transfer" operator). Classical sequences like Bernoulli, Euler, Hermite, and Laguerre polynomials are all Sheffer sequences, and the umbral calculus provides unified proofs of their properties.</p>
+                    </div>
+                </div>
+
 
                 <div class="env-block definition">
                     <div class="env-title">Definition 19.8 (Sheffer Sequence)</div>
@@ -760,6 +785,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Umbral Composition and Operator Theory</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The umbral algebra carries a composition operation that corresponds to substitution of formal power series. This composition turns the space of linear functionals on polynomials into a group (under composition) and an algebra (under pointwise operations), connecting the umbral calculus to the algebra theory of Chapter 18 and providing powerful tools for deriving polynomial identities.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block definition">
                     <div class="env-title">Definition 19.10 (Umbral Operator)</div>
                     <div class="env-body">
@@ -1013,6 +1046,14 @@ window.CHAPTERS.push({
             title: 'Generating Functions and Classical Sequences',
             content: `
                 <h2>Generating Functions and Classical Sequences</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude the course by connecting the umbral calculus to generating functions. The exponential generating function of a Sheffer sequence encodes all the combinatorial information about the sequence, and the umbral methods provide systematic techniques for computing these generating functions and deriving identities. This final section ties together the threads of linear algebra (operators, functionals, algebras) with the concrete beauty of combinatorial mathematics.</p>
+                    </div>
+                </div>
+
 
                 <div class="env-block definition">
                     <div class="env-title">Definition 19.12 (Generating Function)</div>

@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Bilinear Forms and Metric Vector Spaces</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Beyond Inner Products: Bilinear and Quadratic Forms</div>
+                    <div class="env-body">
+                        <p>Chapter 9 studied inner product spaces, where the bilinear form is positive definite. Now we drop the positivity requirement and study general bilinear forms. This generalization opens up a rich world: quadratic forms that may be indefinite (as in Lorentzian geometry), alternating forms that give rise to symplectic geometry, and the interplay between algebraic invariants (rank, signature) and geometric structure. Bilinear forms serve as the bridge between the inner product theory of Chapters 9-10 and the metric space theory of Chapter 12.</p>
+                        <p><strong>Chapter roadmap:</strong> We define bilinear forms and metric vector spaces, develop their matrix representations, study orthogonality and the radical, diagonalize quadratic forms, prove Sylvester's Law of Inertia, explore symplectic geometry, and discuss applications.</p>
+                    </div>
+                </div>
+
+
                 <p>In our study of inner product spaces, we encountered a special type of function that takes two vectors and produces a scalar. This chapter generalizes inner products by removing the positivity requirement, leading to the rich theory of <strong>bilinear forms</strong>. These structures arise naturally in geometry (quadratic forms, Lorentzian metrics), physics (Minkowski space-time), and algebra (trace forms, discriminants).</p>
 
                 <div class="env-block definition">
@@ -170,6 +179,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Matrix Representation of Bilinear Forms</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Just as linear transformations can be represented by matrices after choosing bases, bilinear forms can be represented by Gram matrices. The relationship between the Gram matrix and the choice of basis is governed by congruence (not similarity as for linear maps). Understanding this distinction is essential for the classification of bilinear forms.</p>
+                    </div>
+                </div>
+
+
                 <p>Just as linear transformations can be represented by matrices, bilinear forms have matrix representations that capture their essential properties.</p>
 
                 <div class="env-block theorem">
@@ -320,6 +337,14 @@ window.CHAPTERS.push({
             title: 'Orthogonality and the Radical',
             content: `
                 <h2>Orthogonality and the Radical</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>In inner product spaces, the only vector orthogonal to everything is zero. For general bilinear forms, there may be a non-trivial radical: a subspace of vectors orthogonal to the entire space. The radical measures how "degenerate" the form is, and modding out by it yields a non-degenerate form that we can classify using the tools developed in subsequent sections.</p>
+                    </div>
+                </div>
+
 
                 <p>The concept of orthogonality extends from inner products to general bilinear forms, but with surprising new phenomena.</p>
 
@@ -497,6 +522,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Quadratic Forms and Diagonalization</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Every symmetric bilinear form has an associated quadratic form \(Q(v) = f(v, v)\). Over fields of characteristic not 2, these two objects carry the same information. The key result here is that every quadratic form can be diagonalized: there exists a basis in which the Gram matrix is diagonal. This diagonalization, unlike the spectral theorem, does not require an inner product.</p>
+                    </div>
+                </div>
+
+
                 <p>Every symmetric bilinear form gives rise to a quadratic form, a fundamental object in geometry, optimization, and number theory.</p>
 
                 <div class="env-block definition">
@@ -661,6 +694,14 @@ window.CHAPTERS.push({
             title: 'Sylvester\'s Law of Inertia',
             content: `
                 <h2>Sylvester's Law of Inertia</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>While the diagonal entries of a diagonalized quadratic form depend on the choice of basis, their signs do not. Sylvester's Law of Inertia states that the number of positive, negative, and zero diagonal entries is an invariant of the form. This invariant, called the signature, completely classifies real quadratic forms up to congruence.</p>
+                    </div>
+                </div>
+
 
                 <p>Over \\(\\mathbb{R}\\), symmetric bilinear forms can be completely classified by a remarkable invariant called the <strong>signature</strong>.</p>
 
@@ -857,6 +898,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Symplectic Geometry and Alternating Forms</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now turn to alternating (skew-symmetric) bilinear forms, where \(f(v, v) = 0\) for all \(v\). These forms cannot be diagonalized (the diagonal must be zero), but they have their own canonical form: every non-degenerate alternating form looks like a stack of \(2 \times 2\) blocks. The resulting symplectic geometry is fundamental to classical mechanics (Hamiltonian systems) and quantum mechanics.</p>
+                    </div>
+                </div>
+
+
                 <p>Alternating (antisymmetric with zero diagonal) bilinear forms arise naturally in classical mechanics, differential geometry, and the study of Hamiltonian systems.</p>
 
                 <div class="env-block definition">
@@ -1017,6 +1066,14 @@ window.CHAPTERS.push({
             title: 'Applications and Further Topics',
             content: `
                 <h2>Applications and Further Topics</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with applications of bilinear forms to geometry (Lorentzian spaces), number theory (quadratic residues), and algebra (trace forms and discriminants). These applications demonstrate the versatility of the theory and provide a natural transition to the metric space perspective of Chapter 12.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude with applications of bilinear forms to various areas of mathematics and physics.</p>
 

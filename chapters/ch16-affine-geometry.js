@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Affine Spaces</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Linear to Affine: Geometry without an Origin</div>
+                    <div class="env-body">
+                        <p>A vector space has a distinguished point: the origin. But many geometric objects (lines, planes, simplices) are naturally defined without reference to an origin. Affine geometry formalizes this by "forgetting" the origin while retaining the ability to form linear combinations with coefficients summing to 1. Affine spaces provide the natural setting for the convex geometry of Chapter 15 and connect linear algebra to classical Euclidean and projective geometry.</p>
+                        <p><strong>Chapter roadmap:</strong> We define affine spaces and their relationship to vector spaces, study affine subspaces and flats, develop affine combinations and barycentric coordinates, establish affine independence and bases, study affine maps, connect to projective geometry, and return to convex sets in the affine setting.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block intuition">
                     <div class="env-title">Intuition</div>
                     <div class="env-body">
@@ -147,6 +156,14 @@ window.CHAPTERS.push({
             title: 'Affine Subspaces and Flats',
             content: `
                 <h2>Affine Subspaces and Flats</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Just as vector spaces have subspaces, affine spaces have affine subspaces (also called flats). A flat is a translated subspace: a point plus a vector subspace. Flats include points, lines, planes, and hyperplanes, which are the basic geometric objects of affine geometry. The dimension of a flat is the dimension of the associated vector subspace.</p>
+                    </div>
+                </div>
+
 
                 <p>Just as vector spaces have subspaces, affine spaces have affine subspaces. These generalize concepts like lines, planes, and hyperplanes in Euclidean space.</p>
 
@@ -303,6 +320,14 @@ window.CHAPTERS.push({
             title: 'Affine Combinations and Barycentric Coordinates',
             content: `
                 <h2>Affine Combinations and Barycentric Coordinates</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>In a vector space, we form linear combinations with arbitrary coefficients. In an affine space, the meaningful notion is an affine combination, where the coefficients sum to 1. Barycentric coordinates express a point as an affine combination of a given set of points, providing a coordinate system that is independent of any chosen origin. These coordinates are fundamental in computational geometry, finite element methods, and computer graphics.</p>
+                    </div>
+                </div>
+
 
                 <p>In vector spaces, we can form linear combinations of vectors. In affine spaces, we must be more careful: we can only form <em>affine combinations</em> of points, which are weighted averages.</p>
 
@@ -509,6 +534,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Affine Independence and Affine Bases</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Points in an affine space are affinely independent if no one of them is an affine combination of the others. An affine basis for an \(n\)-dimensional affine space consists of \(n + 1\) affinely independent points (one more than a linear basis, because there is no origin). A simplex is the convex hull of an affine basis, generalizing the notion of a triangle or tetrahedron.</p>
+                    </div>
+                </div>
+
+
                 <p>The notion of linear independence for vectors has an analog for points in affine spaces.</p>
 
                 <div class="env-block definition">
@@ -686,6 +719,14 @@ window.CHAPTERS.push({
             title: 'Affine Maps',
             content: `
                 <h2>Affine Maps</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Affine maps are the structure-preserving maps of affine geometry, just as linear transformations are the structure-preserving maps of linear algebra. Every affine map is a linear map followed by a translation, and the set of all affine maps from one space to another captures both the linear and translational symmetries. Affine maps preserve parallelism, ratios of distances along lines, and convexity.</p>
+                    </div>
+                </div>
+
 
                 <p>The natural maps between affine spaces are those that preserve the affine structure: affine combinations.</p>
 
@@ -883,6 +924,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Affine Geometry and Projective Geometry</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Affine geometry sits naturally inside projective geometry, which is obtained by "adding points at infinity." Every affine space embeds into a projective space, and the extra points at infinity correspond to "directions" in the affine space. This perspective unifies many results (for example, parallel lines meet at a point at infinity) and connects linear algebra to classical geometry.</p>
+                    </div>
+                </div>
+
+
                 <p>Affine geometry has a natural connection to projective geometry. By "adding points at infinity," we can complete an affine space to a projective space where parallel lines meet.</p>
 
                 <div class="env-block intuition">
@@ -1052,6 +1101,14 @@ window.CHAPTERS.push({
             title: 'Convex Sets in Affine Spaces',
             content: `
                 <h2>Convex Sets in Affine Spaces</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by revisiting the convexity theory of Chapter 15 in the more natural setting of affine spaces. Convex sets, convex hulls, and the separation theorems all make sense in affine spaces, where they are independent of the choice of origin. This section ties together the linear, affine, and convex threads of the course.</p>
+                    </div>
+                </div>
+
 
                 <p>Convexity is a fundamental concept in affine geometry with deep connections to optimization, economics, and geometry.</p>
 

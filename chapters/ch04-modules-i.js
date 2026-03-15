@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Introduction to Modules</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Vector Spaces to Modules</div>
+                    <div class="env-body">
+                        <p>Chapters 1 through 3 developed the theory of vector spaces over fields: spaces with bases, dimension, the Rank-Nullity Theorem, and the Isomorphism Theorems. Now we take a bold step in generalization. By replacing the field of scalars with an arbitrary ring, we obtain modules. This seemingly small change has dramatic consequences: modules may not have bases, "dimension" may not be well-defined, and familiar theorems can fail. Yet module theory is indispensable, because viewing a vector space as a module over the polynomial ring \(F[x]\) unlocks the entire theory of canonical forms.</p>
+                        <p><strong>Chapter roadmap:</strong> We define modules and compare them with vector spaces, study submodules and quotient modules (where the isomorphism theorems still hold), explore torsion and annihilators (phenomena absent in vector spaces), develop linear independence and free modules, study module homomorphisms, and examine direct sums and products.</p>
+                    </div>
+                </div>
+
+
                 <p>In this chapter, we begin our study of modules, which generalize the notion of vector spaces. While vector spaces are defined over fields, modules are defined over arbitrary rings. This seemingly small change has profound consequences: many of the nice properties we enjoyed for vector spaces fail for modules in general.</p>
 
                 <div class="env-block intuition">
@@ -150,6 +159,14 @@ window.CHAPTERS.push({
             title: 'Submodules and Quotient Modules',
             content: `
                 <h2>Submodules and Quotient Modules</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Having defined modules, we now construct the basic building blocks: submodules and quotient modules. The good news is that the Isomorphism Theorems from Chapter 3 carry over to modules with essentially the same proofs, since those proofs only used the module axioms. This universality is one of the great strengths of the abstract approach.</p>
+                    </div>
+                </div>
+
 
                 <p>Just as vector spaces have subspaces, modules have submodules. The theory parallels that of vector spaces, but with important differences that we will highlight.</p>
 
@@ -354,6 +371,14 @@ window.CHAPTERS.push({
             title: 'Torsion and Annihilators',
             content: `
                 <h2>Torsion and Annihilators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Here we encounter the first genuinely new phenomenon in module theory. In a vector space, \(rv = 0\) with \(r \neq 0\) forces \(v = 0\). In a module, non-zero elements can be "killed" by non-zero ring elements. Such elements are called torsion elements, and understanding torsion is the key to the structure theorem for modules over PIDs in Chapter 6.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most striking differences between modules and vector spaces concerns the possibility of nonzero elements being "killed" by nonzero scalars. This phenomenon has no analog in vector spaces over fields.</p>
 
@@ -599,6 +624,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Linear Independence and Free Modules</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With torsion understood, we revisit the concepts of linear independence and bases. A module that has a basis is called free. Unlike vector spaces, not every module is free, and even free modules over general rings may have bases of different sizes. Identifying when a module is free, and what happens when it is not, is a central challenge in module theory.</p>
+                    </div>
+                </div>
+
+
                 <p>The concepts of linear independence and basis extend from vector spaces to modules, but with crucial differences that make modules much more subtle.</p>
 
                 <div class="env-block definition">
@@ -708,6 +741,14 @@ window.CHAPTERS.push({
             title: 'Module Homomorphisms',
             content: `
                 <h2>Module Homomorphisms</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Just as linear transformations are the natural maps between vector spaces, module homomorphisms are the structure-preserving maps between modules. The set of all homomorphisms between two modules forms a module itself, giving us the important Hom functor. This section develops the properties of module homomorphisms, which parallel those of linear transformations but with added subtleties due to the more general scalar ring.</p>
+                    </div>
+                </div>
+
 
                 <p>Module homomorphisms are the structure-preserving maps between modules, generalizing linear transformations between vector spaces.</p>
 
@@ -831,6 +872,14 @@ window.CHAPTERS.push({
             title: 'Direct Sums and Direct Products',
             content: `
                 <h2>Direct Sums and Direct Products</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>As with vector spaces, we can combine modules using direct sums. However, for modules there is a distinction between direct sums and direct products that collapses in the finite case but diverges for infinite families. Understanding this distinction is crucial for the structure theory that follows in Chapters 5 and 6.</p>
+                    </div>
+                </div>
+
 
                 <p>Direct sums and products provide ways to build new modules from old ones, generalizing the constructions for vector spaces.</p>
 
@@ -1020,6 +1069,14 @@ window.CHAPTERS.push({
             title: 'Summary: Modules vs. Vector Spaces',
             content: `
                 <h2>Summary: Modules vs. Vector Spaces</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with a systematic comparison of modules and vector spaces. This summary crystallizes which properties of vector spaces survive the generalization to modules and which do not. Understanding these differences is essential preparation for the deeper module theory in the next two chapters, where we progressively restrict the ring to recover stronger results.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude this chapter by highlighting the key differences between modules and vector spaces.</p>
 

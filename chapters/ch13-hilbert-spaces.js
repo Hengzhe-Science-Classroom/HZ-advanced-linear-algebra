@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Complete Subspaces and Projections</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Inner Products Meet Completeness: Hilbert Spaces</div>
+                    <div class="env-body">
+                        <p>Chapter 9 developed inner product spaces in finite dimensions, and Chapter 12 introduced completeness in metric spaces. Now we combine these two threads: a Hilbert space is a complete inner product space. This combination is extraordinarily powerful. Many of the finite-dimensional results from Chapter 9 (orthogonal projections, the Riesz Representation Theorem, Parseval's identity) generalize to Hilbert spaces, but new phenomena appear due to the infinite-dimensional setting.</p>
+                        <p><strong>Chapter roadmap:</strong> We study complete subspaces and projections, develop the theory of Hilbert bases (orthonormal sets), establish Parseval's identity and Bessel's inequality, prove the Riesz Representation Theorem in infinite dimensions, introduce bounded linear operators, study Hilbert dimension, and conclude with applications.</p>
+                    </div>
+                </div>
+
+
                 <p>A Hilbert space is a complete inner product space, meaning that every Cauchy sequence converges. This completeness property is fundamental to much of functional analysis and allows us to generalize many finite-dimensional results to infinite dimensions.</p>
 
                 <div class="env-block definition">
@@ -163,6 +172,14 @@ window.CHAPTERS.push({
             title: 'Hilbert Bases and Orthonormal Sets',
             content: `
                 <h2>Hilbert Bases and Orthonormal Sets</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>In finite-dimensional inner product spaces, every orthonormal set extends to an orthonormal basis. In a Hilbert space, "basis" takes on a new meaning: a Hilbert basis is a maximal orthonormal set, and expansions converge in the norm topology rather than being finite sums. This section develops the theory of Hilbert bases, generalizing the finite-dimensional results of Chapter 9.</p>
+                    </div>
+                </div>
+
 
                 <p>In finite-dimensional spaces, orthonormal bases provide a canonical way to represent vectors. In Hilbert spaces, we need a more subtle notion called a Hilbert basis (or complete orthonormal system), which generalizes this concept to infinite dimensions.</p>
 
@@ -340,6 +357,14 @@ window.CHAPTERS.push({
             title: 'Parseval\'s Identity and Bessel\'s Inequality',
             content: `
                 <h2>Parseval's Identity and Bessel's Inequality</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Parseval's identity says that the norm-squared of a vector equals the sum of squares of its Fourier coefficients. This is the infinite-dimensional generalization of the Pythagorean theorem and connects Hilbert space theory to Fourier analysis. Bessel's inequality, the one-sided version, holds even for incomplete orthonormal sets and is a key tool for convergence arguments.</p>
+                    </div>
+                </div>
+
 
                 <p>Parseval's identity and Bessel's inequality are fundamental results that relate the norm of a vector to its Fourier coefficients with respect to an orthonormal set. These results are essential for understanding convergence in Hilbert spaces.</p>
 
@@ -523,6 +548,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Riesz Representation Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now generalize the Riesz Representation Theorem from Chapter 9 to infinite dimensions. Every bounded linear functional on a Hilbert space is represented by an inner product with a unique vector. This theorem, which requires completeness (and hence fails for mere inner product spaces), is the foundation for the theory of adjoint operators on Hilbert spaces.</p>
+                    </div>
+                </div>
+
+
                 <p>The Riesz representation theorem is one of the most important results in functional analysis. It characterizes all continuous linear functionals on a Hilbert space and establishes a canonical isomorphism between a Hilbert space and its dual.</p>
 
                 <div class="env-block definition">
@@ -690,6 +723,14 @@ window.CHAPTERS.push({
             title: 'Bounded Linear Operators',
             content: `
                 <h2>Bounded Linear Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>In finite dimensions, all linear operators are bounded. In infinite dimensions, unbounded operators exist and require careful treatment. We focus on bounded operators, which form a Banach algebra under the operator norm. The adjoint of a bounded operator on a Hilbert space, defined via the Riesz Representation Theorem, generalizes the matrix adjoint from Chapter 9.</p>
+                    </div>
+                </div>
+
 
                 <p>Beyond functionals, we study bounded linear operators between Hilbert spaces. These form the foundation for operator theory and quantum mechanics.</p>
 
@@ -877,6 +918,14 @@ window.CHAPTERS.push({
             title: 'Hilbert Dimension and Separability',
             content: `
                 <h2>Hilbert Dimension and Separability</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Hilbert dimension of a Hilbert space is the cardinality of any Hilbert basis. As in the finite-dimensional case (Chapter 1), this is well-defined because all Hilbert bases have the same cardinality. A Hilbert space is separable if and only if its Hilbert dimension is countable, connecting the metric property of separability (Chapter 12) to the algebraic notion of dimension.</p>
+                    </div>
+                </div>
+
 
                 <p>Just as vector spaces are classified by their dimension (cardinality of a basis), Hilbert spaces are classified by the cardinality of a Hilbert basis, called the Hilbert dimension.</p>
 
@@ -1101,6 +1150,14 @@ window.CHAPTERS.push({
             title: 'Applications and Examples',
             content: `
                 <h2>Applications and Examples</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with the most important examples of Hilbert spaces: \(\ell^2\) (square-summable sequences), \(L^2\) (square-integrable functions), and Sobolev spaces. These spaces are the workhorses of functional analysis, signal processing, and PDE theory. The theory developed in this chapter, combined with the tensor products of Chapter 14, completes the geometric and analytic foundations of advanced linear algebra.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude with several important applications of Hilbert space theory to analysis, differential equations, and quantum mechanics.</p>
 

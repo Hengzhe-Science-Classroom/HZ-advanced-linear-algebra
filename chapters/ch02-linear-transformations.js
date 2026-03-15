@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Definitions and Basic Properties</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Vector Spaces to Linear Transformations</div>
+                    <div class="env-body">
+                        <p>Chapter 1 established the objects of study: vector spaces and their subspaces. But in algebra, objects alone are not enough; we need the maps between them. Linear transformations are the structure-preserving maps of linear algebra, analogous to group homomorphisms in group theory and continuous maps in topology. By studying these maps, we learn not just what vector spaces are, but how they relate to one another.</p>
+                        <p><strong>Chapter roadmap:</strong> We define linear transformations and their basic properties, study kernels and images (the two fundamental subspaces attached to any linear map), prove the Rank-Nullity Theorem, develop matrix representations, understand change of basis, and study the algebra of linear operators on a single space.</p>
+                    </div>
+                </div>
+
+
                 <p>Linear transformations are the fundamental morphisms in the category of vector spaces. They are the maps that preserve the vector space structure, making them the natural objects to study in linear algebra.</p>
 
                 <div class="env-block definition">
@@ -173,6 +182,14 @@ window.CHAPTERS.push({
             title: 'Kernel and Image',
             content: `
                 <h2>Kernel and Image</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Every linear transformation \(\tau: V \to W\) carries with it two fundamental subspaces: the kernel (what gets sent to zero) and the image (what gets hit). These subspaces encode the essential information about \(\tau\). The kernel measures the "information loss" of the map, while the image measures its "reach." Together, they lead to the Rank-Nullity Theorem in the next section.</p>
+                    </div>
+                </div>
+
 
                 <p>Two subspaces naturally associated with any linear transformation capture essential information about its behavior: the kernel (what maps to zero) and the image (what the transformation can reach).</p>
 
@@ -374,6 +391,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Rank-Nullity Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The kernel and image are not independent: they are linked by one of the most elegant equations in linear algebra. The Rank-Nullity Theorem states that \(\dim(\ker \tau) + \dim(\operatorname{im} \tau) = \dim V\). This simple formula has profound consequences, from determining when systems have solutions to characterizing isomorphisms.</p>
+                    </div>
+                </div>
+
+
                 <p>One of the most fundamental results in linear algebra relates the dimensions of the kernel and image of a linear transformation to the dimension of its domain.</p>
 
                 <div class="env-block theorem">
@@ -540,6 +565,14 @@ window.CHAPTERS.push({
             title: 'Matrix Representations',
             content: `
                 <h2>Matrix Representations</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Rank-Nullity Theorem gives us abstract structural information about linear maps. But to compute with these maps, we need to represent them as matrices. By choosing bases for the domain and codomain, every linear transformation becomes a matrix, and every matrix represents a linear transformation. This bridge between abstract maps and concrete arrays of numbers is what makes linear algebra both theoretically deep and computationally powerful.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most powerful ideas in linear algebra is that once bases are chosen, linear transformations can be represented by matrices, reducing abstract questions to concrete calculations.</p>
 
@@ -726,6 +759,14 @@ window.CHAPTERS.push({
             title: 'Change of Basis',
             content: `
                 <h2>Change of Basis</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>A linear transformation is an intrinsic object, but its matrix representation depends on the choice of bases. Changing bases leads to a new matrix related to the old one by conjugation. Understanding this relationship is essential: the quest for the "best" basis, one that makes the matrix as simple as possible, drives the entire theory of canonical forms in Chapters 7 and 8.</p>
+                    </div>
+                </div>
+
 
                 <p>The same linear transformation looks different in different bases. Understanding how matrix representations change when we change bases is crucial for finding the "best" representation of a transformation.</p>
 
@@ -914,6 +955,14 @@ window.CHAPTERS.push({
             title: 'Similarity and the Algebra of Linear Operators',
             content: `
                 <h2>Similarity and the Algebra of Linear Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by studying linear operators (maps from a space to itself) and the equivalence relation of similarity. Two matrices are similar if they represent the same operator in different bases. The set of all operators on a space forms an algebra under composition, connecting us to the algebraic structures of Chapter 0. This algebraic perspective sets the stage for the Isomorphism Theorems in the next chapter.</p>
+                    </div>
+                </div>
+
 
                 <p>We now formalize the notion of similarity and explore the algebraic structure of the set of all linear operators on a vector space.</p>
 

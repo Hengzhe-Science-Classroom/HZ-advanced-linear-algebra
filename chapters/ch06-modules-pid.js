@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Free Modules over PIDs</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">The Structure Theorem: Modules over PIDs</div>
+                    <div class="env-body">
+                        <p>Chapters 4 and 5 developed the general theory of modules, revealing both the power and the limitations of working over arbitrary rings. Now we focus on a particularly well-behaved class of rings: principal ideal domains (PIDs). Over a PID, every finitely generated module has a canonical decomposition into cyclic modules, a result that simultaneously generalizes the Fundamental Theorem of Finitely Generated Abelian Groups and the theory of canonical forms for matrices.</p>
+                        <p><strong>Chapter roadmap:</strong> We prove that submodules of free modules over PIDs are free, develop the primary decomposition and cyclic decomposition theorems, introduce invariant factors and the Smith Normal Form, and apply the theory to abelian groups and linear algebra.</p>
+                    </div>
+                </div>
+
+
                 <p>In this chapter, we study finitely generated modules over a principal ideal domain (PID). The structure theorem for such modules is one of the most powerful results in algebra, with applications ranging from canonical forms for matrices to the classification of finitely generated abelian groups.</p>
 
                 <div class="env-block definition">
@@ -154,6 +163,14 @@ window.CHAPTERS.push({
             title: 'Torsion Modules and Primary Decomposition',
             content: `
                 <h2>Torsion Modules and Primary Decomposition</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With the free part of a module understood, we turn to the torsion part. Over a PID, every finitely generated torsion module decomposes into primary components, one for each prime factor of its annihilator. This primary decomposition is the module-theoretic analogue of factoring an integer into prime powers, and it is the key step toward the full structure theorem.</p>
+                    </div>
+                </div>
+
 
                 <div class="env-block definition">
                     <div class="env-title">Definition 6.7 (Torsion Module)</div>
@@ -352,6 +369,14 @@ window.CHAPTERS.push({
             title: 'Cyclic Decomposition and Elementary Divisors',
             content: `
                 <h2>Cyclic Decomposition and Elementary Divisors</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The primary decomposition breaks a torsion module into primary components. Each primary component further decomposes into cyclic modules. The resulting elementary divisors (the annihilators of these cyclic summands) form a complete set of invariants: two modules are isomorphic if and only if they have the same elementary divisors. This is the elementary divisor form of the structure theorem.</p>
+                    </div>
+                </div>
+
 
                 <div class="env-block definition">
                     <div class="env-title">Definition 6.12 (Cyclic Module)</div>
@@ -578,6 +603,14 @@ window.CHAPTERS.push({
             title: 'Invariant Factors',
             content: `
                 <h2>Invariant Factors</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Elementary divisors give one way to describe the structure of a module; invariant factors give another. While elementary divisors are the "prime power" decomposition, invariant factors are the "composite" decomposition satisfying a divisibility chain. The two descriptions are equivalent and easily convertible, but each is more natural in different contexts: elementary divisors for theoretical classification, invariant factors for computational algorithms like the Smith Normal Form.</p>
+                    </div>
+                </div>
+
 
                 <p>While the elementary divisor form gives a complete classification, there is another canonical form called the <strong>invariant factor decomposition</strong> that is often more convenient for computation.</p>
 
@@ -838,6 +871,14 @@ window.CHAPTERS.push({
             title: 'Smith Normal Form',
             content: `
                 <h2>Smith Normal Form</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Smith Normal Form is the computational heart of the structure theorem. Just as row reduction brings a matrix to echelon form over a field, the Smith algorithm brings a matrix to diagonal form over a PID, with the diagonal entries (the invariant factors) satisfying a divisibility chain. This algorithm makes the abstract structure theorem effective and computable.</p>
+                    </div>
+                </div>
+
 
                 <p>The Smith normal form is a computational tool for finding the invariant factors of a module presented by a matrix. It is the analog of row reduction for matrices over a PID.</p>
 
@@ -1117,6 +1158,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Applications to Abelian Groups</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The integers \(\mathbb{Z}\) are a PID, and \(\mathbb{Z}\)-modules are exactly abelian groups. Thus the structure theorem for modules over PIDs immediately yields the Fundamental Theorem of Finitely Generated Abelian Groups. This application demonstrates the power of the abstract approach: a single theorem encompasses an entire classical theory.</p>
+                    </div>
+                </div>
+
+
                 <p>The structure theorem for modules over PIDs has immediate and powerful applications to the classification of finitely generated abelian groups.</p>
 
                 <div class="env-block theorem">
@@ -1389,6 +1438,14 @@ window.CHAPTERS.push({
             title: 'Applications to Linear Algebra',
             content: `
                 <h2>Applications to Linear Algebra</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now apply the structure theorem to its most important setting: the polynomial ring \(F[x]\) acting on a vector space via a linear operator. This perspective, which treats a vector space as an \(F[x]\)-module, directly yields the rational and Jordan canonical forms. The transition to this module-theoretic viewpoint is the subject of Chapter 7.</p>
+                    </div>
+                </div>
+
 
                 <p>The theory of modules over PIDs has profound applications to linear algebra, particularly in understanding the structure of linear operators.</p>
 

@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Invariant Subspaces and the Minimal Polynomial</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Module Theory to Operator Structure</div>
+                    <div class="env-body">
+                        <p>Chapter 6 developed the structure theorem for modules over PIDs in full generality. Now we harvest its most spectacular application: the canonical forms of a linear operator. By viewing a vector space \(V\) equipped with an operator \(T\) as a module over \(F[x]\) (where \(x\) acts as \(T\)), the entire structure theorem translates into a decomposition of \(V\) into \(T\)-invariant cyclic subspaces. This decomposition yields the Jordan and Rational Canonical Forms.</p>
+                        <p><strong>Chapter roadmap:</strong> We study invariant subspaces and the minimal polynomial, prove the Primary Decomposition Theorem, develop cyclic decomposition and elementary divisors for operators, derive the Jordan and Rational Canonical Forms, explore the characteristic polynomial and Cayley-Hamilton Theorem, and conclude with the big picture connecting all canonical forms.</p>
+                    </div>
+                </div>
+
+
                 <p>The structure theory of linear operators reveals deep connections between abstract algebra and linear algebra. By viewing a vector space \\(V\\) as a module over the polynomial ring \\(F[x]\\), we can apply the powerful machinery of module theory to understand the canonical forms of linear operators.</p>
 
                 <div class="env-block definition">
@@ -187,6 +196,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Primary Decomposition Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The minimal polynomial captures the "algebraic identity" of a linear operator. When this polynomial factors into coprime pieces, the Primary Decomposition Theorem decomposes the vector space into invariant subspaces, one for each factor. This is the operator-theoretic version of the primary decomposition from Chapter 6, and it is the first step toward canonical forms.</p>
+                    </div>
+                </div>
+
+
                 <p>The primary decomposition theorem is one of the cornerstones of linear algebra. It shows that any finite-dimensional vector space decomposes into invariant subspaces corresponding to the prime factors of the minimal polynomial.</p>
 
                 <div class="env-block theorem">
@@ -321,6 +338,14 @@ window.CHAPTERS.push({
             title: 'Cyclic Decomposition and Elementary Divisors',
             content: `
                 <h2>Cyclic Decomposition and Elementary Divisors</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Primary Decomposition splits the space into primary components. Each component further decomposes into cyclic subspaces, exactly as in the module theory of Chapter 6. The elementary divisors of the operator (the minimal polynomials of these cyclic summands) are the fundamental invariants that determine the operator up to similarity.</p>
+                    </div>
+                </div>
+
 
                 <p>Refining the primary decomposition, we can further decompose each primary component into cyclic subspaces. This leads to the notion of elementary divisors, a complete invariant for similarity.</p>
 
@@ -528,6 +553,14 @@ window.CHAPTERS.push({
             title: 'Jordan Canonical Form',
             content: `
                 <h2>Jordan Canonical Form</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>When the characteristic polynomial splits completely (as it always does over \(\mathbb{C}\)), the elementary divisors take the form \((x - \lambda)^k\). The corresponding cyclic subspaces have particularly simple matrix representations: Jordan blocks. The Jordan Canonical Form is the direct sum of these blocks, and it is the most refined canonical form available when the field is algebraically closed.</p>
+                    </div>
+                </div>
+
 
                 <p>When the base field \\(F\\) is algebraically closed (e.g., \\(F = \\mathbb{C}\\)), every irreducible polynomial has degree 1, and the elementary divisors take the particularly simple form \\((x - \\lambda)^k\\). This leads to the Jordan canonical form.</p>
 
@@ -842,6 +875,14 @@ window.CHAPTERS.push({
             title: 'Rational Canonical Form',
             content: `
                 <h2>Rational Canonical Form</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Jordan form requires splitting the characteristic polynomial, which is not always possible over a given field. The Rational Canonical Form, built from companion matrices of the invariant factors, exists over any field. It provides a canonical form that is the matrix-level expression of the invariant factor decomposition from Chapter 6.</p>
+                    </div>
+                </div>
+
 
                 <p>The rational canonical form is a canonical form that works over any field, not just algebraically closed fields. It is based on companion matrices rather than Jordan blocks.</p>
 
@@ -1184,6 +1225,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Characteristic Polynomial and Applications</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now connect the canonical forms to the characteristic polynomial, proving the Cayley-Hamilton Theorem (every operator satisfies its characteristic polynomial) as a corollary of the Rational Canonical Form. This section also develops trace, determinant, and other polynomial invariants of operators, showing how abstract structure theory yields concrete computational tools.</p>
+                    </div>
+                </div>
+
+
                 <p>We conclude with a deeper look at the characteristic polynomial and its relationship to the minimal polynomial, along with applications to computing functions of operators.</p>
 
                 <div class="env-block definition">
@@ -1398,6 +1447,14 @@ window.CHAPTERS.push({
             title: 'Summary and The Big Picture',
             content: `
                 <h2>Summary and The Big Picture</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by unifying the various canonical forms and invariants into a single coherent picture. The minimal polynomial, characteristic polynomial, elementary divisors, invariant factors, Jordan form, and Rational Canonical Form are all different windows into the same underlying structure: the \(F[x]\)-module structure of a vector space. This unified perspective, bridging Chapters 4 through 7, is one of the most beautiful achievements of modern algebra. From here, we turn to the eigenvalue-focused approach in Chapter 8.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude by synthesizing the main results and presenting the grand unified picture of operator structure theory.</p>
 

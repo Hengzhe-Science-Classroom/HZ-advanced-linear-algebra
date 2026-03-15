@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Quotient Spaces and Cosets</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Linear Transformations to Isomorphism Theorems</div>
+                    <div class="env-body">
+                        <p>In Chapter 2, we studied linear transformations, their kernels and images, and the Rank-Nullity Theorem. The Isomorphism Theorems take these ideas further by revealing deep structural relationships between quotient spaces and images. These theorems, which have analogues in group theory and ring theory, are among the most powerful tools in abstract algebra. They tell us that the structure of a linear map is completely captured by the relationship between its kernel and its image.</p>
+                        <p><strong>Chapter roadmap:</strong> We revisit quotient spaces and cosets, establish the canonical projection and its dimension formula, prove the First Isomorphism Theorem via the universal property, derive the Second and Third Isomorphism Theorems, prove the Correspondence Theorem, and unify all three isomorphism theorems with applications.</p>
+                    </div>
+                </div>
+
+
                 <p>The concept of a quotient space is one of the most powerful constructions in linear algebra. Given a vector space \\(V\\) and a subspace \\(S\\), we can form a new vector space \\(V/S\\) whose elements are <em>cosets</em> of \\(S\\) in \\(V\\). This construction allows us to "collapse" \\(S\\) to a single point while preserving the vector space structure.</p>
 
                 <div class="env-block definition">
@@ -165,6 +174,14 @@ window.CHAPTERS.push({
             title: 'The Canonical Projection and Dimension Formula',
             content: `
                 <h2>The Canonical Projection and Dimension Formula</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With cosets and quotient spaces established, we now study the canonical projection \(\pi: V \to V/S\), which maps each vector to its coset. This map is the prototypical surjection in linear algebra. Its kernel is exactly \(S\), and the dimension formula \(\dim(V/S) = \dim V - \dim S\) quantifies how much "information" remains after collapsing \(S\).</p>
+                    </div>
+                </div>
+
 
                 <p>Every quotient space comes equipped with a natural linear transformation called the canonical projection, which maps each vector to its coset.</p>
 
@@ -391,6 +408,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Universal Property and First Isomorphism Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The canonical projection is more than just a useful map; it satisfies a universal property that characterizes quotient spaces up to isomorphism. This universal property leads directly to the First Isomorphism Theorem: every linear map \(\tau: V \to W\) factors through \(V/\ker(\tau)\), and the induced map is an isomorphism onto \(\operatorname{im}(\tau)\). This is the cornerstone of the chapter.</p>
+                    </div>
+                </div>
+
+
                 <p>The quotient space \\(V/S\\) satisfies a remarkable <em>universal property</em> that characterizes it uniquely up to isomorphism. This property is fundamental to category theory and appears throughout mathematics.</p>
 
                 <div class="env-block theorem">
@@ -586,6 +611,14 @@ window.CHAPTERS.push({
             title: 'The Second and Third Isomorphism Theorems',
             content: `
                 <h2>The Second and Third Isomorphism Theorems</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The First Isomorphism Theorem relates kernels and images. The Second and Third Isomorphism Theorems address a different question: how do subspaces interact with quotient constructions? The Second Theorem describes \((S + T)/T \cong S/(S \cap T)\), while the Third describes \((V/S)/(T/S) \cong V/T\). These results are invaluable for understanding nested subspace structures.</p>
+                    </div>
+                </div>
+
 
                 <p>The remaining isomorphism theorems provide powerful tools for manipulating quotient spaces. They show that quotient spaces behave somewhat like fractions in arithmetic.</p>
 
@@ -842,6 +875,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Correspondence Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The isomorphism theorems describe specific isomorphisms. The Correspondence Theorem goes further, establishing a bijection between the subspaces of \(V\) containing \(S\) and the subspaces of \(V/S\). This lattice isomorphism shows that the quotient construction preserves the entire subspace structure above \(S\), a result that simplifies many arguments throughout algebra.</p>
+                    </div>
+                </div>
+
+
                 <p>The Correspondence Theorem (also called the Lattice Isomorphism Theorem) reveals a beautiful structure-preserving relationship between subspaces of \\(V\\) containing \\(S\\) and subspaces of the quotient \\(V/S\\).</p>
 
                 <div class="env-block theorem">
@@ -1083,6 +1124,14 @@ window.CHAPTERS.push({
             title: 'Applications and the Three Isomorphisms Unified',
             content: `
                 <h2>Applications and the Three Isomorphisms Unified</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by applying the isomorphism theorems to concrete problems and viewing all three theorems from a unified perspective. These applications demonstrate how the abstract machinery simplifies otherwise complex arguments, and they prepare us for the generalization to modules in Chapter 4, where the same theorems hold with only minor modifications.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude by examining how the three isomorphism theorems work together and by exploring several important applications.</p>
 

@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Tensor Product and Universal Property</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Tensor Products: Linearizing Bilinear Maps</div>
+                    <div class="env-body">
+                        <p>Throughout this course, we have studied linear maps between vector spaces. But many natural constructions (bilinear forms in Chapter 11, multilinear maps in algebra and physics) are not linear. Tensor products solve this problem by converting multilinear maps into linear ones. The tensor product \(V \otimes W\) is the universal recipient of bilinear maps from \(V \times W\), and this universal property makes it one of the most versatile constructions in mathematics.</p>
+                        <p><strong>Chapter roadmap:</strong> We construct the tensor product and its universal property, study its algebraic properties and functoriality, extend to multilinear maps and iterated tensor products, develop symmetric and exterior algebras, and conclude with tensor algebras and universal constructions.</p>
+                    </div>
+                </div>
+
+
                 <p>The tensor product is one of the most powerful constructions in linear algebra, providing a bridge between bilinear maps and linear maps. Unlike direct sums, which capture "independent" combinations of vector spaces, tensor products capture "interactive" combinations. The construction appears throughout mathematics: in differential geometry (tensor fields), representation theory (tensor products of representations), and quantum mechanics (composite systems).</p>
 
                 <div class="env-block definition">
@@ -303,6 +312,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Properties and Functoriality of Tensor Products</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Having constructed tensor products and established their universal property, we now study their algebraic behavior. Tensor products are associative, commutative (up to isomorphism), distribute over direct sums, and interact well with duals. The functoriality of the tensor product means that a linear map \(f: V \to V'\) induces a linear map \(f \otimes g: V \otimes W \to V' \otimes W'\), making the tensor product a functor on the category of vector spaces.</p>
+                    </div>
+                </div>
+
+
                 <p>The tensor product satisfies several fundamental algebraic properties that make it behave like a "multiplicative" operation on vector spaces (contrasting with the direct sum, which behaves like "addition").</p>
 
                 <div class="env-block theorem">
@@ -562,6 +579,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Multilinear Maps and Iterated Tensor Products</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The tensor product linearizes bilinear maps. Iterated tensor products linearize multilinear maps. The universal property extends naturally: \(V_1 \otimes \cdots \otimes V_k\) is the universal recipient of \(k\)-linear maps from \(V_1 \times \cdots \times V_k\). This extension is essential for defining tensors of arbitrary rank, which arise throughout differential geometry and physics.</p>
+                    </div>
+                </div>
+
+
                 <p>The universal property of the tensor product extends naturally to more than two vector spaces, connecting multilinear maps with linear maps on iterated tensor products.</p>
 
                 <div class="env-block definition">
@@ -769,6 +794,14 @@ window.CHAPTERS.push({
             title: 'Symmetric and Exterior Algebras',
             content: `
                 <h2>Symmetric and Exterior Algebras</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The tensor algebra is large and unstructured. By imposing symmetry or antisymmetry conditions, we obtain two distinguished quotients: the symmetric algebra (polynomials in the components) and the exterior algebra (alternating tensors). The exterior algebra, in particular, provides the algebraic framework for determinants, differential forms, and the Grassmannian. The wedge product in the exterior algebra captures the essence of "oriented volume."</p>
+                    </div>
+                </div>
+
 
                 <p>While the tensor product \\(V \\otimes V\\) treats vectors symmetrically in the sense that \\(v \\otimes w\\) and \\(w \\otimes v\\) are distinct, many applications require us to impose symmetry or antisymmetry relations. This leads to quotients of the tensor algebra: the <strong>symmetric algebra</strong> and the <strong>exterior algebra</strong>.</p>
 
@@ -1068,6 +1101,14 @@ window.CHAPTERS.push({
             title: 'Tensor Algebra and Universal Constructions',
             content: `
                 <h2>Tensor Algebra and Universal Constructions</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by placing tensor products in the broader context of universal constructions. The tensor algebra of a vector space is the free associative algebra generated by that space, and the symmetric and exterior algebras are its natural quotients. This perspective connects the concrete linear algebra of this course to the universal constructions studied in abstract algebra and category theory, and it anticipates the algebra theory of Chapter 18.</p>
+                    </div>
+                </div>
+
 
                 <p>The tensor algebra unifies the constructions we have seen, providing a universal "free" algebra generated by a vector space.</p>
 

@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Convex Sets and Half-Spaces</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Linear Algebra Meets Optimization: Convexity and Positive Solutions</div>
+                    <div class="env-body">
+                        <p>The first 14 chapters developed the theoretical core of advanced linear algebra. Now we turn to one of its most important applications: characterizing when a linear system has positive or non-negative solutions. This question, answered by Farkas' Lemma and its relatives, is the foundation of linear programming and convex optimization. The key tools are convex sets and separation theorems, which use the geometric insights from inner product spaces (Chapter 9) in a new way.</p>
+                        <p><strong>Chapter roadmap:</strong> We define convex sets and half-spaces, study convex hulls and combinations, prove separation theorems, develop cone theory and polar cones, prove Farkas' Lemma, and establish the duality theory of linear programming.</p>
+                    </div>
+                </div>
+
+
                 <p>This chapter studies the geometry of positive solutions to linear systems \\(Ax = b\\) and \\(Ax \\geq b\\). The key tools are convex sets and separation theorems, which allow us to characterize when such systems have solutions.</p>
 
                 <div class="env-block definition">
@@ -199,6 +208,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Convex Hulls and Convex Combinations</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Convex sets are defined by the property that line segments between points stay inside the set. The convex hull of a set of points is the smallest convex set containing them, and it consists of all convex combinations. Caratheodory's Theorem provides a sharp bound on the number of points needed, connecting the combinatorial structure of convex hulls to the dimension of the ambient space.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block definition">
                     <div class="env-title">Definition 15.5 (Convex Combination)</div>
                     <div class="env-body">
@@ -356,6 +373,14 @@ window.CHAPTERS.push({
             title: 'Separation Theorems',
             content: `
                 <h2>Separation Theorems</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Separation theorems are the geometric core of convexity theory. They state that disjoint convex sets can be separated by a hyperplane, a result that uses the orthogonal projection theory from Chapter 9. These theorems are the engine behind duality results like Farkas' Lemma: a system has no positive solution if and only if a "dual" certificate of infeasibility exists.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most powerful tools in convex analysis is the ability to separate disjoint convex sets by hyperplanes. These separation theorems have profound applications in optimization, duality theory, and the study of positive solutions to linear systems.</p>
 
@@ -587,6 +612,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Cones and Polar Cones</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Cones are convex sets that are also closed under non-negative scaling. The polar (or dual) cone of a cone \(C\) consists of all vectors making a non-obtuse angle with every vector in \(C\). This duality between cones is the geometric foundation for Farkas' Lemma and linear programming duality in the following sections.</p>
+                    </div>
+                </div>
+
+
                 <div class="env-block definition">
                     <div class="env-title">Definition 15.13 (Cone)</div>
                     <div class="env-body">
@@ -756,6 +789,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Farkas' Lemma</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Farkas' Lemma is the fundamental theorem of alternatives for linear systems: exactly one of two related systems has a solution, never both. This result, which follows from the separation theorems, is the key tool for proving strong duality in linear programming. It can be viewed as a precise characterization of when a vector lies in a finitely generated cone.</p>
+                    </div>
+                </div>
+
+
                 <p>Farkas' lemma is a fundamental result in the theory of linear inequalities. It provides a criterion for when a system \\(Ax = b\\), \\(x \\geq 0\\) has a solution, phrased as a "theorem of the alternative": exactly one of two mutually exclusive statements holds.</p>
 
                 <div class="env-block theorem">
@@ -913,6 +954,14 @@ window.CHAPTERS.push({
             title: 'Linear Programming Duality',
             content: `
                 <h2>Linear Programming Duality</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by applying Farkas' Lemma to establish the duality theory of linear programming. Every linear program has a dual, and the strong duality theorem states that the optimal values of the primal and dual coincide. This duality, which is a far-reaching generalization of the relationship between systems and their alternatives, is one of the most beautiful and practically important results in optimization.</p>
+                    </div>
+                </div>
+
 
                 <p>Farkas' lemma is the foundation of linear programming duality. We briefly explore the connection between primal and dual linear programs.</p>
 

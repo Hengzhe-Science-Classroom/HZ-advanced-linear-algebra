@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Algebras and Subalgebras</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Unifying Structure: An Introduction to Algebras</div>
+                    <div class="env-body">
+                        <p>Throughout this course, we have encountered structures that are simultaneously vector spaces and rings: the space of linear operators \(\mathcal{L}(V)\), polynomial rings \(F[x]\), and matrix rings \(M_n(F)\). An algebra is the formal concept that captures this combination: a vector space equipped with a bilinear multiplication. This chapter develops the theory of algebras, providing a unified framework for many of the structures encountered in earlier chapters and connecting linear algebra to modern abstract algebra.</p>
+                        <p><strong>Chapter roadmap:</strong> We define algebras and subalgebras, study ideals and quotient algebras, develop algebra homomorphisms, explore division algebras (culminating in Frobenius' theorem), study matrix algebras and their tensor products, and introduce the structure theory of algebras.</p>
+                    </div>
+                </div>
+
+
                 <p>An algebra combines the structure of a vector space with a multiplication operation, creating a rich mathematical object that unifies linear algebra with ring theory. Algebras are fundamental in representation theory, quantum mechanics, and modern geometry.</p>
 
                 <div class="env-block definition">
@@ -259,6 +268,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Ideals and Quotient Algebras</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Just as subspaces lead to quotient spaces (Chapter 1) and submodules lead to quotient modules (Chapter 4), ideals lead to quotient algebras. An ideal in an algebra is simultaneously a subspace and a two-sided ideal in the ring-theoretic sense. The quotient inherits both the vector space and the ring structure, and the Isomorphism Theorems (Chapter 3) carry over to the algebra setting.</p>
+                    </div>
+                </div>
+
+
                 <p>Just as normal subgroups enable quotient groups and ideals enable quotient rings, we need a notion of "ideal" in algebras to construct quotient algebras that preserve the algebra structure.</p>
 
                 <div class="env-block definition">
@@ -465,6 +482,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Algebra Homomorphisms</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Algebra homomorphisms are maps that preserve all three operations: addition, scalar multiplication, and multiplication. These are the natural structure-preserving maps in the category of algebras, and they unify the concepts of linear transformation (Chapter 2) and ring homomorphism. The kernel of an algebra homomorphism is an ideal, and the First Isomorphism Theorem applies.</p>
+                    </div>
+                </div>
+
+
                 <p>Homomorphisms between algebras preserve both the vector space and multiplicative structures, providing the natural notion of "structure-preserving map" in this category.</p>
 
                 <div class="env-block definition">
@@ -577,6 +602,14 @@ window.CHAPTERS.push({
             title: 'Division Algebras',
             content: `
                 <h2>Division Algebras</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>A division algebra is an algebra in which every non-zero element has a multiplicative inverse. The real numbers, complex numbers, and quaternions are the canonical examples. Frobenius' remarkable theorem states that these are the only finite-dimensional associative division algebras over \(\mathbb{R}\), revealing a deep constraint on the algebraic structures compatible with the real numbers.</p>
+                    </div>
+                </div>
+
 
                 <p>Division algebras are algebras where every nonzero element has a multiplicative inverse. They generalize fields by allowing non-commutative multiplication, leading to fascinating structures like the quaternions.</p>
 
@@ -849,6 +882,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Matrix Algebras and the Tensor Product</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Matrix algebras \(M_n(F)\) are the prototypical finite-dimensional algebras, and by the Artin-Wedderburn theorem, all semisimple algebras decompose into products of matrix algebras. The tensor product of algebras (from Chapter 14) gives a way to build larger algebras from smaller ones. The Kronecker product of matrices is the concrete realization of this tensor product.</p>
+                    </div>
+                </div>
+
+
                 <p>Matrix algebras are fundamental building blocks in algebra theory. The tensor product provides a way to construct new algebras from existing ones, unifying many constructions in representation theory and algebraic geometry.</p>
 
                 <div class="env-block definition">
@@ -1111,6 +1152,14 @@ window.CHAPTERS.push({
             title: 'The Structure Theory of Algebras',
             content: `
                 <h2>The Structure Theory of Algebras</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude with the Artin-Wedderburn theorem, which classifies all semisimple algebras as direct products of matrix algebras over division rings. This theorem is the algebra-level analogue of the structure theorem for modules over PIDs (Chapter 6) and provides a satisfying end to the structural thread that runs through the entire course. The final chapter applies algebraic techniques in a very different direction: the combinatorics of polynomial sequences.</p>
+                    </div>
+                </div>
+
 
                 <p>We conclude with the beautiful structure theorems that classify finite-dimensional algebras over special fields. These results, due to Frobenius, Wedderburn, and Artin, reveal the fundamental building blocks of algebra theory.</p>
 

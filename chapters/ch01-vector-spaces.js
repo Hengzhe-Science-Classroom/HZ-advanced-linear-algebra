@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Vector Spaces and Subspaces</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">From Preliminaries to Vector Spaces</div>
+                    <div class="env-body">
+                        <p>In Chapter 0, we established the foundational tools of set theory, algebraic structures, and matrix computations. Now we put these tools to work. A vector space is the central object of linear algebra: it captures the idea of "things you can add and scale" in a precise algebraic framework. By working over arbitrary fields rather than just \(\mathbb{R}\) or \(\mathbb{C}\), we reveal that linearity is fundamentally an algebraic phenomenon, not a geometric one.</p>
+                        <p><strong>Chapter roadmap:</strong> We define vector spaces and subspaces, study how subspaces combine (the lattice of subspaces), develop the theory of linear independence and bases, establish the dimension theorem, explore direct sums, construct quotient spaces, and finally connect abstract coordinates to concrete row operations.</p>
+                    </div>
+                </div>
+
+
                 <p>We begin our study of advanced linear algebra with the foundational concept of a vector space. Unlike elementary treatments that focus on \\(\\mathbb{R}^n\\) or \\(\\mathbb{C}^n\\), we work over arbitrary fields, revealing the algebraic essence of linearity.</p>
 
                 <div class="env-block definition">
@@ -162,6 +171,14 @@ window.CHAPTERS.push({
             title: 'The Lattice of Subspaces',
             content: `
                 <h2>The Lattice of Subspaces</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Now that we have defined vector spaces and subspaces, a natural question arises: how do subspaces interact with one another? Given two subspaces, we can form their intersection (always a subspace) and their sum (the smallest subspace containing both). These operations give the collection of all subspaces a rich algebraic structure called a lattice. Understanding this lattice is key to decomposition theorems later in the course.</p>
+                    </div>
+                </div>
+
 
                 <p>The collection of all subspaces of a vector space \\(V\\) forms a rich algebraic structure called a lattice. Understanding this structure reveals deep connections between linear algebra and order theory.</p>
 
@@ -317,6 +334,14 @@ window.CHAPTERS.push({
             title: 'Spanning Sets and Linear Independence',
             content: `
                 <h2>Spanning Sets and Linear Independence</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The lattice of subspaces tells us how subspaces combine, but we still need a way to describe subspaces efficiently. Spanning sets give us a way to generate a subspace from a collection of vectors, while linear independence ensures there is no redundancy. Together, these concepts lead to the notion of a basis, which is the most fundamental structural tool in linear algebra.</p>
+                    </div>
+                </div>
+
 
                 <p>Two fundamental concepts govern how vectors generate subspaces: <em>span</em> measures what we can reach, while <em>linear independence</em> measures redundancy. Together, these notions lead to the concept of a basis.</p>
 
@@ -511,6 +536,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Bases and Dimension</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now arrive at one of the most important results in linear algebra: every vector space has a basis, and all bases have the same cardinality. The dimension of a vector space is a complete invariant for isomorphism: two vector spaces over the same field are isomorphic if and only if they have the same dimension. This remarkable fact, proved using Zorn's Lemma from Chapter 0, gives us a powerful classification tool.</p>
+                    </div>
+                </div>
+
+
                 <p>A basis is a "perfect" generating set: large enough to span the space, yet small enough to be linearly independent. Bases provide coordinate systems, revealing the dimension as an intrinsic invariant.</p>
 
                 <div class="env-block definition">
@@ -659,6 +692,14 @@ window.CHAPTERS.push({
             title: 'Direct Sums',
             content: `
                 <h2>Direct Sums</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With bases and dimension established, we can now ask: when can a vector space be decomposed into simpler pieces? Direct sums provide the answer. A direct sum decomposition breaks a space into independent components, much like factoring an integer into primes. This idea will be central to the structure theory of linear operators in Chapters 7 and 8.</p>
+                    </div>
+                </div>
+
 
                 <p>Direct sums formalize the decomposition of a vector space into independent components. This construction is fundamental for understanding structure theorems in linear algebra.</p>
 
@@ -834,6 +875,14 @@ window.CHAPTERS.push({
             title: 'Quotient Spaces',
             content: `
                 <h2>Quotient Spaces</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Direct sums let us build larger spaces from smaller ones. Quotient spaces do the reverse: they let us "collapse" a subspace to a point, producing a smaller space that captures the structure of the original modulo the collapsed subspace. This construction, built on the equivalence relations from Chapter 0, will be essential for the Isomorphism Theorems in Chapter 3 and for understanding the structure of linear operators.</p>
+                    </div>
+                </div>
+
 
                 <p>Quotient spaces formalize the process of "collapsing" a subspace to zero. This construction is dual to taking subspaces and plays a central role in homological algebra and representation theory.</p>
 
@@ -1027,6 +1076,14 @@ window.CHAPTERS.push({
             title: 'Coordinates and the Row Space',
             content: `
                 <h2>Coordinates and the Row Space</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude our study of vector spaces by connecting the abstract theory to concrete computation. Choosing a basis gives us a coordinate system, turning abstract vectors into tuples and abstract linear maps into matrices. The row space of a matrix connects these coordinates back to the subspace structure we have been studying, completing the bridge between theory and computation.</p>
+                    </div>
+                </div>
+
 
                 <p>Bases provide coordinate systems, turning abstract vectors into concrete tuples. This connection between abstract and computational viewpoints is formalized through coordinate maps. We also explore the fundamental equality of row rank and column rank.</p>
 

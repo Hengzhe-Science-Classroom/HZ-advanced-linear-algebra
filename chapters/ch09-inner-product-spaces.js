@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Inner Products and Norms</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Adding Geometry: Inner Product Spaces</div>
+                    <div class="env-body">
+                        <p>Through Chapters 1 to 8, our study of linear algebra has been purely algebraic: vector spaces, linear maps, and canonical forms require no notion of length or angle. Now we enrich the theory by introducing inner products, which bring geometry into the picture. An inner product gives us the ability to measure lengths, angles, and orthogonality, transforming linear algebra from a purely algebraic subject into one with deep geometric and analytic content.</p>
+                        <p><strong>Chapter roadmap:</strong> We define inner products and norms, develop orthogonality and orthogonal complements, present the Gram-Schmidt process, study orthogonal projections and best approximation, introduce adjoint operators, prove the Riesz Representation Theorem, and establish Parseval's identity for orthonormal bases.</p>
+                    </div>
+                </div>
+
+
                 <p>Inner product spaces provide the algebraic framework for generalizing geometric concepts like length, angle, and orthogonality to arbitrary vector spaces. This structure is fundamental to both pure and applied mathematics.</p>
 
                 <div class="env-block definition">
@@ -209,6 +218,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Orthogonality and Orthogonal Complements</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Inner products give us a notion of "perpendicularity." Two vectors are orthogonal if their inner product is zero. The orthogonal complement of a subspace \(W\) consists of all vectors perpendicular to every vector in \(W\). This geometric notion of complement is much more canonical than the algebraic complements from Chapter 1: the orthogonal complement is uniquely determined by \(W\), not dependent on a choice of basis.</p>
+                    </div>
+                </div>
+
+
                 <p>Orthogonality generalizes perpendicularity to abstract inner product spaces and is central to decomposition theorems.</p>
 
                 <div class="env-block definition">
@@ -381,6 +398,14 @@ window.CHAPTERS.push({
             title: 'Gram-Schmidt Orthogonalization',
             content: `
                 <h2>Gram-Schmidt Orthogonalization</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The existence of orthogonal complements raises a constructive question: given an arbitrary basis, can we produce an orthonormal one? The Gram-Schmidt process answers this affirmatively, converting any linearly independent set into an orthonormal set with the same span. This algorithm is one of the most practically important procedures in all of mathematics, with applications in numerical analysis, statistics, and signal processing.</p>
+                    </div>
+                </div>
+
 
                 <p>The Gram-Schmidt process is a fundamental algorithm that converts any basis into an orthonormal basis while preserving the span at each step.</p>
 
@@ -558,6 +583,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Orthogonal Projections and Best Approximation</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>With orthonormal bases in hand, we can now solve the best approximation problem: given a vector \(v\) and a subspace \(W\), find the vector in \(W\) closest to \(v\). The answer is the orthogonal projection of \(v\) onto \(W\). This concept is fundamental to least squares methods, Fourier analysis, and the generalization to Hilbert spaces in Chapter 13.</p>
+                    </div>
+                </div>
+
+
                 <p>Orthogonal projections solve the fundamental problem: given a subspace \\(W\\) and a vector \\(v\\), find the closest point in \\(W\\) to \\(v\\).</p>
 
                 <div class="env-block definition">
@@ -723,6 +756,14 @@ window.CHAPTERS.push({
             title: 'Adjoint Operators',
             content: `
                 <h2>Adjoint Operators</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Inner products allow us to define a new operation on linear operators: the adjoint. The adjoint \(T^*\) of an operator \(T\) satisfies \(\langle Tv, w \rangle = \langle v, T^*w \rangle\). This concept connects the algebraic theory of operators to the geometric theory of inner products and leads to the classification of normal operators in Chapter 10.</p>
+                    </div>
+                </div>
+
 
                 <p>The adjoint generalizes matrix transpose to arbitrary linear operators on inner product spaces, enabling us to classify operators by their relationship to their adjoint.</p>
 
@@ -922,6 +963,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>The Riesz Representation Theorem</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Every linear functional on a finite-dimensional inner product space can be represented as an inner product with a fixed vector. This is the Riesz Representation Theorem, which establishes a canonical isomorphism between a space and its dual. This result is a cornerstone of functional analysis and will be generalized to infinite-dimensional Hilbert spaces in Chapter 13.</p>
+                    </div>
+                </div>
+
+
                 <p>One of the most beautiful results in functional analysis: every continuous linear functional on a Hilbert space is represented by an inner product with a fixed vector.</p>
 
                 <div class="env-block theorem">
@@ -1114,6 +1163,14 @@ window.CHAPTERS.push({
             title: 'Orthonormal Bases and Parseval\'s Identity',
             content: `
                 <h2>Orthonormal Bases and Parseval's Identity</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We conclude by studying the special properties of orthonormal bases. Parseval's identity shows that the norm of a vector equals the sum of squares of its Fourier coefficients, connecting inner product spaces to Fourier analysis. This identity will generalize to infinite-dimensional Hilbert spaces in Chapter 13, where it becomes a fundamental tool.</p>
+                    </div>
+                </div>
+
 
                 <p>Orthonormal bases are the "ideal" bases for inner product spaces, allowing explicit coordinate representations and powerful identities.</p>
 

@@ -11,6 +11,15 @@ window.CHAPTERS.push({
             content: `
                 <h2>Free Modules and Rank</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Deepening Module Theory: Free and Noetherian Modules</div>
+                    <div class="env-body">
+                        <p>Chapter 4 introduced modules and showed how they generalize vector spaces, sometimes in surprising ways. In this chapter, we dig deeper into two fundamental themes: freeness (when does a module have a basis?) and finiteness conditions (when can we guarantee that submodules are finitely generated?). The Noetherian condition, which ensures that ascending chains of submodules stabilize, is one of the most important finiteness conditions in all of algebra. It culminates in the Hilbert Basis Theorem, a cornerstone of commutative algebra.</p>
+                        <p><strong>Chapter roadmap:</strong> We study free modules and their rank, characterize free modules via epimorphisms, introduce Noetherian modules and their key properties, extend to Noetherian rings, and prove the Hilbert Basis Theorem.</p>
+                    </div>
+                </div>
+
+
                 <p>In the study of vector spaces over fields, we know that every vector space has a basis and all bases have the same cardinality (the dimension). The situation for modules over arbitrary rings is considerably more subtle. While free modules do have bases, not all modules are free, and even for free modules, the behavior of bases depends critically on the underlying ring.</p>
 
                 <div class="env-block definition">
@@ -258,6 +267,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Free Modules and Epimorphisms</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>Having established the basics of free modules and rank, we now characterize free modules in terms of epimorphisms: every module is a quotient of a free module. This perspective, which connects free modules to the "lifting" of maps, is fundamental in homological algebra and provides a powerful tool for constructing modules from generators and relations.</p>
+                    </div>
+                </div>
+
+
                 <p>Free modules enjoy special properties with respect to homomorphisms. In particular, epimorphisms onto free modules always split, meaning they have right inverses. This section explores these structural properties and their consequences.</p>
 
                 <div class="env-block theorem">
@@ -462,6 +479,14 @@ window.CHAPTERS.push({
             title: 'Noetherian Modules',
             content: `
                 <h2>Noetherian Modules</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We now shift from the "algebraic" condition of freeness to the "finiteness" condition of being Noetherian. A module is Noetherian if every ascending chain of submodules stabilizes, equivalently, if every submodule is finitely generated. This condition ensures that certain infinite processes terminate, making it indispensable for both theoretical arguments and computational algorithms.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most important finiteness conditions in algebra is the ascending chain condition. Modules and rings satisfying this condition are called Noetherian, after Emmy Noether, who pioneered the use of these ideas in abstract algebra.</p>
 
@@ -756,6 +781,14 @@ window.CHAPTERS.push({
             content: `
                 <h2>Noetherian Rings and Modules</h2>
 
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>The Noetherian property of modules is intimately connected to the Noetherian property of the underlying ring. When the ring is Noetherian, finitely generated modules over it are automatically Noetherian. This powerful transfer principle, combined with the Hilbert Basis Theorem in the next section, gives us a vast supply of Noetherian rings and modules to work with.</p>
+                    </div>
+                </div>
+
+
                 <p>A fundamental question in module theory is: when are all finitely generated modules over a ring \\(R\\) Noetherian? The answer turns out to be remarkably clean: this happens if and only if \\(R\\) itself is Noetherian as a ring.</p>
 
                 <div class="env-block theorem">
@@ -975,6 +1008,14 @@ window.CHAPTERS.push({
             title: 'The Hilbert Basis Theorem',
             content: `
                 <h2>The Hilbert Basis Theorem</h2>
+
+                <div class="env-block motivation">
+                    <div class="env-title">Section Overview</div>
+                    <div class="env-body">
+                        <p>We arrive at one of the most celebrated results in commutative algebra: if \(R\) is a Noetherian ring, then so is \(R[x]\). By induction, every polynomial ring \(R[x_1, \ldots, x_n]\) over a Noetherian ring is Noetherian. This theorem connects abstract ring theory to algebraic geometry and is essential for the structure theory of modules over PIDs in Chapter 6.</p>
+                    </div>
+                </div>
+
 
                 <p>One of the most celebrated results in commutative algebra is the Hilbert Basis Theorem, which shows that the property of being Noetherian passes from a ring to its polynomial ring. This theorem is fundamental in algebraic geometry and has far-reaching consequences.</p>
 
